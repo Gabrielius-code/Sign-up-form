@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url("Norse-Bold.otf");
+}
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  position: relative;
+  height: 100vh;
+}
+.background-image {
+  background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 30rem 57rem;
+
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+.background-for-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 14rem;
+  width: 30rem;
+  height: 9rem;
+}
+.odin-text {
+  position: absolute;
+  color: white;
+  font-family: Norse-Bold;
+  font-size: 7rem;
+  top: 15rem;
+  left: 15rem;
+}
+.odin-logo {
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+
+  top: 15rem;
+  left: 7rem;
+}
