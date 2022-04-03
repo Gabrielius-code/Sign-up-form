@@ -6,14 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <div class="background-image"></div>
-      <div class="background-for-text"></div>
+      <div class="background-image left-side">
+        <div class="background-for-odin">
+          <img src="odin-lined.png" alt="odin logo" class="odin-logo" />
+          <h1 class="odin-text">ODIN</h1>
+        </div>
+        <div class="Copyright">
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto" target="_blank"
+            >Halie West</a
+          >
+          on
+          <a href="https://unsplash.com/photos/25xggax4bSA" target="_blank"
+            >Unsplash</a
+          >.
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="top">
+          <h3 class="text big">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em>
+            to get started.
+          </h3>
+          <h3 class="text margin">You <em>know</em> you want to.</h3>
+        </div>
+        <div class="middle">
+          <h2 class="padding h2">Let's do this!</h2>
 
-      <img src="odin-lined.png" alt="odin logo" class="odin-logo" />
-      <div class="odin-text">ODIN</div>
+          <form action="#" class="form" id="sign-up-form">
+            <div class="first-column">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name" required />
+
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" />
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                class="error"
+                onchange="checkPassword();"
+              />
+            </div>
+            <div class="second-column">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name" required />
+              <label for="tel">PHONE NUMBER</label>
+              <input type="tel" id="tel" name="tel" required />
+
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                required
+                class="error"
+                onchange="checkPassword();"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="bottom">
+          <button type="submit" form="sign-up-form" class="create-account">
+            Create Account
+          </button>
+          <div class="login">
+            Already have an account? <a href="#" class="log-in">Log in</a>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
